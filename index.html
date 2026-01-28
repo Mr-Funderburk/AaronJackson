@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Aaron Jackson, of Dangerous Curves Productions, is an actor, producer, director, acting coach, and motivational speaker.">
+    <meta author="Stephen Funderburk">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <title>Aaron Jackson</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/aaron_jackson.css">
+</head>
+<body>
+    <div id="navContainer">
+        <div class="brand">
+            <a href="#">A<span>aron </span>J<span>ackson</span><span class="primary">.</span></a>
+            <span class="dcp">Dangerous Curves Productions</span>
+        </div>
+
+        <button id="hamburger" aria-label="Open Menu"><span></span><span></span><span></span></button>
+
+        <nav id="mainNav">
+            <button id="closeNav"><i class="fa-regular fa-circle-xmark"></i></button>
+            <ul>
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li class="has-sub">
+                    <a href="#" class="nav-item">Actor <span class="arrow"></span></a>
+                    <ul>
+                        <li><a href="#">Biography</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Showreels</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">In the News</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-item">Director</a></li>
+                <li class="has-sub">
+                    <a href="#" class="nav-item">Producer <span class="arrow"></span></a>
+                    <ul>
+                        <li><a href="#">Dangerous Curves Productions</a></li>
+                        <li><a href="#">Dangerous Curves</a></li>
+                        <li><a href="#">Dangerous Words</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="#" class="nav-item">Coach <span class="arrow"></span></a>
+                    <ul>
+                        <li><a href="#">Toolbox</a></li>
+                        <li><a href="#">Actor's Info</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">In Studio</a></li>
+                        <li><a href="#">Virtual</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <div class="headshot-container">
+            <div class="overlay"></div>
+            <img src="img/aaron-jackson01.jpg" alt="Aaron Jackson headshot">
+        </div>
+
+        <div class="video-container">
+            <div class="overlay"></div>
+            <video autoplay muted loop playsinline poster="img/aaron-jackson01.jpg">
+                <source src="vid/aaron-jackson-reel.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div>
+            <h1>Aaron Jackson</h1>
+            <p>
+                <span>Actor<span>.</span></span>
+                <span>Producer<span>.</span></span>
+                <span>Director<span>.</span></span>
+                <span>Coach<span>.</span></span>
+                <span>Motivational Speaker<span>.</span></span>
+            </p>
+        </div>
+    </header>
+
+    <main class="grid-container">
+        <div class="bento tall actor-block">
+            <div class="content">
+                <h4>The Actor</h4>
+                <p class="catch">Latest Showreel</p>
+                <p>Snippet description here.</p>
+                <p>Maybe a reel here too? Background?</p>
+                <a href="#" class="btn">Play Reel</a>
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+        <div class="bento coaching-block">
+            <div class="content">
+                <h4>The Coach</h4>
+                <p class="catch">Book a 1-on-1</p>
+                <p>Snippet description here.</p>
+                <a href="#" class="btn">Book Session</a>
+            </div>
+        </div>
+
+        <div class="bento directing-block">
+            <div class="content">
+                <h4>The Director</h4>
+                <p class="catch">Feature Film: "Something or Other"</p>
+                <p>Snippet description here.</p>
+            </div>
+        </div>
+
+        <div class="bento wide production-block">
+            <div class="content">
+                <h4>The Producer</h4>
+                <p class="catch">Dangerous Curves Productions</p>
+                <p>Snippet description here.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="bento highlight-block">
+            <p>"A master of the craft who understands the business."</p>
+            <cite>— Some Magazine</cite>
+        </div>
+    </main>
+
+    <footer>
+        <div class="grid-container">
+            <div class="bento wide">
+                <h4>Inquiries</h4>
+                <p class="catch">Let’s create something together.</p>
+
+                <form action="#" id="footerContact">
+                    <div class="input-group">
+                        <input type="text" id="contactName" name="contactName" placeholder="Full Name" required>
+                        <input type="email" id="contactEmail" name="contactEmail" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="input-group">
+                        <select name="contactSubject" id="contactSubject">
+                            <option value="acting">Acting Inquiry</option>
+                            <option value="directing">Directing Project</option>
+                            <option value="coaching">Acting Coaching</option>
+                            <option value="other">General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <textarea name="contactMessage" id="contactMessage" rows="4" placeholder="Tell me about your project..."></textarea>
+                    <button type="submit" class="btn-send">Send Message</button>
+                </form>
+            </div>
+
+            <div class="bento">
+                <h4>Socials</h4>
+                
+                <div class="socials">
+                    <a href="https://www.facebook.com/aaroncaldreams" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/aaroncaldreams_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.imdb.com/name/nm0413245/" target="_blank"><i class="fa-brands fa-imdb"></i></a>
+                </div>
+            </div>
+
+            <div class="bento">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">The Actor</a></li>
+                    <li><a href="#">The Director</a></li>
+                    <li><a href="#">The Producer</a></li>
+                    <li><a href="#">The Coach</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="bento">
+                <h4>Based In</h4>
+                <p>Fort Myers</p>
+                <p>Affiliations?</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Aaron Jackson<span>.</span> All Rights Reserved.</p>
+            <div class="legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="navOverlay"></div>
+
+
+<script>
+const menuBtn = document.getElementById("hamburger");
+const navWrapper = document.getElementById("mainNav");
+const navOverlay = document.getElementById("navOverlay");
+const dropdowns = document.querySelectorAll(".has-sub");
+const closeNav = document.getElementById("closeNav");
+
+// Toggle Slide-in Menu
+menuBtn.addEventListener("click", () => {
+    navWrapper.classList.toggle("active");
+    navOverlay.classList.toggle("active");
+    menuBtn.classList.toggle("open");
+});
+
+// Close menu when clicking overlay
+navOverlay.addEventListener("click", () => {
+    navWrapper.classList.remove("active");
+    navOverlay.classList.remove("active");
+});
+
+closeNav.addEventListener("click", () => {
+    navWrapper.classList.remove("active");
+    navOverlay.classList.remove("active");
+});
+
+// Mobile Accordion Logic
+dropdowns.forEach(dropdown => {
+    dropdown.querySelector(".nav-item").addEventListener("click", (e) => {
+        if (window.innerWidth <= 992) {
+            e.preventDefault(); // Prevent link jump on mobile
+            dropdowns.forEach(d => { d.classList.remove("open"); });
+            dropdown.classList.toggle("open");
+        }
+    });
+});
+</script>
+</body>
+</html>

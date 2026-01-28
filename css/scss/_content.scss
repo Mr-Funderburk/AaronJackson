@@ -1,0 +1,105 @@
+@use "vars" as v;
+@use "sass:color" as c;
+
+.grid-container {
+    display: grid;
+    padding: 5%;
+    gap: 20px;
+    grid-template-columns: 1fr;
+
+    .bento {
+        background-color: #fff;
+        border-radius: v.$card-radius;
+        padding: 30px;
+        position: relative;
+        min-height: 25px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            color: v.$primary;
+            font-weight: 700;
+        }
+
+        .catch {
+            font-size: 1.8rem;
+            margin: 15px 0;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 8px 0;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            background-color: v.$primary;
+            color: #fff;
+            border-radius: calc(v.$card-radius - 12px);
+            margin-top: 12px;
+
+            &:hover, &:focus {
+                background-color: c.adjust(v.$primary, $lightness: 15%);
+            }
+        }
+    }
+
+    .tall, .wide {
+        background: v.$text-dark;
+        color: #fff;
+    }
+
+    @media screen and (min-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+        .tall { grid-row: span 2; }
+        .wide { grid-column: span 2; }
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .actor-block {
+        background: url("../img/aaron-jackson01.jpg") center/cover !important;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        z-index: 1;
+
+        .content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(0deg,rgba(26, 26, 26, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+
+    .highlight-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: v.$primary !important;
+        color: #fff !important;
+
+        p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+}
