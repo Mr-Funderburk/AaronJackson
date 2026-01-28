@@ -44,6 +44,7 @@
             color: #fff;
             border-radius: calc(v.$card-radius - 12px);
             margin-top: 12px;
+            transition: background-color 0.3s ease-out;
 
             &:hover, &:focus {
                 background-color: c.adjust(v.$primary, $lightness: 15%);
